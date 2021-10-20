@@ -209,3 +209,21 @@ body {
 #group9 .parallax__layer--base {
   background: var(--primary);
 }
+
+#mobile {
+  display: none;
+}
+.wip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  #desktop {
+    display: none;
+  }
+  #mobile {
+    display: block;
+  }
+}

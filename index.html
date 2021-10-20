@@ -1,26 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AuburnHacks22</title>
-  <meta name="description" content="AuburnHacks, a hackathon designed for everyone.">
-  <meta name="author" content="Ziyang Li">
-  <meta property="og:title" content="AuburnHacks22">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://auburnhacks.com">
-  <meta property="og:description" content="AuburnHacks, a hackathon designed for everyone.">
-  <meta property="og:image" content="">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <!-- Developed by Ziyang Li -->
+    <!-- Credit: Keith Clark for the parallax effect -->
+    <!-- Credit: Apple for the scrolling animation -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AuburnHacks22</title>
+    <meta
+      name="description"
+      content="AuburnHacks, a hackathon designed for everyone."
+    />
+    <meta name="author" content="Ziyang Li" />
+    <meta property="og:title" content="AuburnHacks22" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://auburnhacks.com" />
+    <meta
+      property="og:description"
+      content="AuburnHacks, a hackathon designed for everyone."
+    />
+    <meta property="og:image" content="" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-  <div>
-    <h1> Website Under Construction! </h1>	
-  </div>	
-</body>
+  <body>
+
+    <div>
+        <!-- ***************************  -->
+        <!-- ***************************  -->
+        <!-- Unhide me for a easter egg!  -->
+        <div class="debug" hidden>
+          <label><input type="checkbox"> Easter Egg </label>
+        </div>
+        <!-- Unhide me for a easter egg!  -->
+        <!-- ***************************  -->
+        <!-- ***************************  -->
+      <div class="parallax">
+        <div id="group4" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+            <div class="header-buttons">
+              <button>ABOUT</button>
+              <button>FAQ</button>
+              <button>SPONSORS</button>
+              <button>OUR TEAM</button>
+              <button class="pre-regis">PRE-REGISTRATION FORM</button>
+            </div>
+          </div>
+          <div class="parallax__layer parallax__layer--deep">
+            <!-- Deep Background Layer -->
+            <img src="images/mt_1.svg" alt="mountain 1" />
+          </div>
+          <div class="parallax__layer parallax__layer--back">
+            <!-- Background Layer -->
+            <img src="images/mt_2.svg" alt="mountain 2" />
+          </div>
+          
+        </div>
+        <div id="group5" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+            <!-- Base Layer -->
+          </div>
+        </div>
+        <div id="group6" class="parallax__group">
+          <div class="parallax__layer parallax__layer--back">
+            <div class="title">Background Layer</div>
+          </div>
+          <div class="parallax__layer parallax__layer--base">
+            <div class="title">Base Layer</div>
+          </div>
+        </div>
+        <div id="group7" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+            <div class="title">Base Layer</div>
+          </div>
+        </div>
+        <div id="group8" class="parallax__group">
+          <div class="parallax__layer parallax__layer--back">
+            <div class="title">Background Layer</div>
+          </div>
+          <div class="parallax__layer parallax__layer--base">
+            <div class="title">Base Layer</div>
+          </div>
+        </div>
+        <div id="group9" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+            <div class="title">Base Layer</div>
+          </div>
+        </div>
+      </div>
+    
+      <script>
+        var debugInput = document.querySelector("input");
+        function updateDebugState() {
+            document.body.classList.toggle('debug-on', debugInput.checked);
+        }
+        debugInput.addEventListener("click", updateDebugState);
+        updateDebugState();
+      </script>
+    </body>
+    </html>
+    </div>
+  </body>
 </html>

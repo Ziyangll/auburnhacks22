@@ -11,6 +11,9 @@
 }
 
 /* body css */
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--primary);
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -170,10 +173,10 @@ body {
 }
 /* Landing page */
 .bg-image {
-  width: 1800px;
+  width: 1000px;
 }
 .landing {
-  width: 1750px;
+  width: 1800px;
   position: relative;
   top: -230px;
 }
@@ -323,6 +326,10 @@ body {
   margin-right: auto;
   width: 50%;
 }
+.flip_image {
+  -webkit-transform: scalerY(-1);
+  transform: scaleY(-1);
+}
 .flex-col > span {
   font-size: 1.5rem;
 }
@@ -405,7 +412,7 @@ body {
   z-index: 2;
 }
 #group8 .parallax__layer--back {
-  background: var(--water);
+  background: var(--primary);
 }
 #group9 {
   z-index: 3;
@@ -416,17 +423,17 @@ body {
 
 @media (max-width: 768px) {
   .header-buttons {
-    display: flex;
+    display: none;
     flex-direction: column;
   }
   .AH_logo {
-    width: 100%;
-    margin-top: 250px;
-    left: 0;
+    width: 570px;
   }
   .event_date {
+    top: 20px;
     font-size: 20px;
-    right: 15px;
+    right: 20px;
+    margin: 0px;
   }
   /* about section */
   .about_section {
@@ -475,10 +482,12 @@ body {
   }
   .expanded;
 }
-@media (min-width: 1800px) {
+@media (min-width: 1000px) {
   .bg-image {
     width: 100%;
   }
+}
+@media (min-width: 1800px) {
   .landing {
     width: 100%;
   }

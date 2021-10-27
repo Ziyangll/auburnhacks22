@@ -15,6 +15,10 @@ body {
   background-color: var(--primary);
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
+h1 {
+  font-size: 80px;
+  text-align: center;
+}
 
 .header-buttons {
   display: flex;
@@ -171,20 +175,20 @@ body {
 .landing {
   width: 1750px;
   position: relative;
-  top: -200px;
+  top: -230px;
 }
 
 .AH_logo {
   position: absolute;
   width: 1000px;
-  margin-top: 20vh;
+  margin-top: 200px;
   right: 35px;
 }
 
 .event_date {
   color: var(--white);
   position: absolute;
-  margin-top: 30vh;
+  margin-top: 300px;
   right: 70px;
 }
 .click_through {
@@ -211,26 +215,135 @@ body {
 .white-text {
   color: var(--white);
 }
+
 /* About section */
-#about {
-  visibility: hidden;
+.about_section {
+  margin: 30px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* FAQ section */
-#faqs {
-  visibility: hidden;
+.leaf_base {
+  height: 100vh;
+  width: 100vw;
+}
+.leaf_back {
+  height: 100vh;
+  width: 100vw;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.wrapper {
+  position: relative;
+}
+.grass_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.container {
+  width: 500px;
+  transition: all 0.3s ease-out;
+}
+.container .header {
+  background-color: #d3d3d3;
+  padding: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.container .expanded {
+  display: none;
+  padding: 5px;
+}
+.top-section {
+  cursor: pointer;
+}
+.two-col-faq {
+  display: flex;
+  flex-direction: row;
+}
+.two-col-faq > div {
+  margin: 10px;
+}
+.container * p {
+  font-size: 18px;
 }
 
 /* Sponsors section */
-#sponsors {
-  visibility: hidden;
+.sponsors_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  margin-top: 200px;
 }
-
+.sponsors_container * a {
+  color: var(--air);
+}
 /* Team section */
-#ourteam {
-  visibility: hidden;
-}
 
+.ourteam_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  margin-top: 200px;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.pfp {
+  border-radius: 50px;
+}
+.ourteam_container * .flex-col {
+  margin: 50px;
+}
+/* thanks footer */
+.thanks_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  margin-top: 200px;
+}
+.thanks_container > h1 {
+  text-align: center;
+  margin: 20px;
+}
+.social-menu {
+  display: flex;
+}
+.social-menu > ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  list-style-type: none;
+}
+.social-menu * svg {
+  width: 100px;
+  height: 100px;
+
+  margin: 20px;
+}
 /* all parallax stuff */
 
 .parallax {
@@ -312,4 +425,10 @@ body {
   .landing {
     width: 100%;
   }
+}
+
+.section {
+  height: 9000px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }

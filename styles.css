@@ -20,13 +20,14 @@ body {
   display: flex;
   display: -webkit-flex;
   justify-content: right;
-  -webkit-justify-content: center;
+  -webkit-justify-content: flex-end;
   align-items: center;
   -webkit-align-items: center;
-  -webkit-flex: 1 0 200px;
-  flex: 1 0 200px;
   padding: 10px;
-  z-index: 9;
+  color: var(--white);
+  position: relative;
+  /* it's over 9000!!! */
+  z-index: 9001;
 }
 .header-buttons > button {
   cursor: pointer;
@@ -63,6 +64,10 @@ body {
 .header-buttons > .pre-regis:hover {
   color: var(--black);
   background-color: var(--water);
+}
+a:-webkit-any-link {
+  color: var(--white);
+  text-decoration: none;
 }
 
 /* Parallax base styles
@@ -159,6 +164,74 @@ body {
   margin: 0;
   padding: 0;
 }
+/* Landing page */
+.bg-image {
+  width: 1800px;
+}
+.landing {
+  width: 1750px;
+  position: relative;
+  top: -200px;
+}
+
+.AH_logo {
+  position: absolute;
+  width: 1000px;
+  margin-top: 20vh;
+  right: 35px;
+}
+
+.event_date {
+  color: var(--white);
+  position: absolute;
+  margin-top: 30vh;
+  right: 70px;
+}
+.click_through {
+  pointer-events: none;
+}
+.down_arrow {
+  z-index: 9;
+  color: var(--white);
+  position: absolute;
+  left: 20px;
+  top: 93vh;
+  opacity: 0;
+  animation: fade 2s linear;
+}
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.white-text {
+  color: var(--white);
+}
+/* About section */
+#about {
+  visibility: hidden;
+}
+
+/* FAQ section */
+#faqs {
+  visibility: hidden;
+}
+
+/* Sponsors section */
+#sponsors {
+  visibility: hidden;
+}
+
+/* Team section */
+#ourteam {
+  visibility: hidden;
+}
+
+/* all parallax stuff */
 
 .parallax {
   font-size: 200%;
@@ -186,7 +259,7 @@ body {
   z-index: 3;
 }
 #group5 .parallax__layer--base {
-  background: var(--secondary);
+  background: var(--primary);
 }
 
 #group6 {
@@ -230,5 +303,13 @@ body {
   }
   #mobile {
     display: block;
+  }
+}
+@media (min-width: 1800px) {
+  .bg-image {
+    width: 100%;
+  }
+  .landing {
+    width: 100%;
   }
 }

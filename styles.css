@@ -401,21 +401,64 @@ body {
   background: var(--primary);
 }
 
-#mobile {
-  display: none;
-}
-.wip {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
 @media (max-width: 768px) {
-  #desktop {
+  .header-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .AH_logo {
+    width: 100%;
+    margin-top: 250px;
+    left: 0;
+  }
+  .event_date {
+    font-size: 20px;
+    right: 15px;
+  }
+  /* about section */
+  .about_section {
+    text-align: center;
+  }
+  .two-col-faq {
+    flex-direction: column;
+  }
+  .container * p {
+    font-size: 12px;
+    width: 90vw;
+    margin-left: 60px;
+  }
+  .collapsed {
+    width: 90vw;
+  }
+  .expanded_container {
+    width: 90vw;
+  }
+  .sponsors_container {
+    text-align: center;
+  }
+  .ourteam_container {
+    text-align: center;
+  }
+  .ourteam_container > .flex-row {
+    text-align: center;
+
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .ourteam_container * img {
     display: none;
   }
-  #mobile {
-    display: block;
+  .ourteam_container * .flex-col {
+    margin: 0;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  #thanks > h1 {
+    margin: 10px;
+  }
+  .social-menu > ul {
+    flex-direction: column;
   }
 }
 @media (min-width: 1800px) {
@@ -425,10 +468,4 @@ body {
   .landing {
     width: 100%;
   }
-}
-
-.section {
-  height: 9000px;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
 }

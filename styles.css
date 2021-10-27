@@ -279,6 +279,9 @@ body {
 .container * p {
   font-size: 18px;
 }
+.expanded > p {
+  text-align: center;
+}
 
 /* Sponsors section */
 .sponsors_container {
@@ -292,6 +295,7 @@ body {
 .sponsors_container * a {
   color: var(--air);
 }
+
 /* Team section */
 
 .ourteam_container {
@@ -309,9 +313,18 @@ body {
 .flex-col {
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
 }
 .pfp {
-  border-radius: 50px;
+  border-radius: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.flex-col > span {
+  font-size: 1.5rem;
 }
 .ourteam_container * .flex-col {
   margin: 50px;
@@ -460,6 +473,7 @@ body {
   .social-menu > ul {
     flex-direction: column;
   }
+  .expanded;
 }
 @media (min-width: 1800px) {
   .bg-image {

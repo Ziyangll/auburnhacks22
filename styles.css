@@ -36,7 +36,7 @@ h1 {
   /* it's over 9000!!! */
   z-index: 9001;
 }
-.header-buttons > button {
+.header-buttons > a {
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
@@ -56,11 +56,11 @@ h1 {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.header-buttons > button {
+.header-buttons > a {
   color: var(--white);
   background-color: var(--air);
 }
-.header-buttons > button:hover {
+.header-buttons > a:hover {
   color: var(--white);
   background-color: var(--water);
 }
@@ -82,7 +82,7 @@ a:-webkit-any-link {
 
 .parallax {
   height: 500px; /* fallback for older browsers */
-  height: 100vh;
+  height: 1000px;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-perspective: 300px;
@@ -92,7 +92,7 @@ a:-webkit-any-link {
 .parallax__group {
   position: relative;
   height: 500px; /* fallback for older browsers */
-  height: 100vh;
+  height: 1000px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
@@ -231,11 +231,11 @@ body {
 
 /* FAQ section */
 .leaf_base {
-  height: 100vh;
+  height: 1000px;
   width: 100vw;
 }
 .leaf_back {
-  height: 100vh;
+  height: 1000px;
   width: 100vw;
   /* Center and scale the image nicely */
   background-position: center;
@@ -306,6 +306,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 20px;
   margin-top: 200px;
 }
@@ -464,8 +465,6 @@ body {
   }
   .ourteam_container > .flex-row {
     text-align: center;
-
-    flex-direction: column;
     font-size: 20px;
   }
   .ourteam_container * img {

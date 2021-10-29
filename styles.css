@@ -422,9 +422,12 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header-buttons {
+  .header-buttons > button {
     display: none;
     flex-direction: column;
+  }
+  .header-buttons > .pre-regis {
+    display: block;
   }
   .AH_logo {
     width: 570px;
@@ -432,7 +435,7 @@ body {
   .event_date {
     top: 20px;
     font-size: 20px;
-    right: 20px;
+    left: 20px;
     margin: 0px;
   }
   /* about section */
@@ -480,7 +483,6 @@ body {
   .social-menu > ul {
     flex-direction: column;
   }
-  .expanded;
 }
 @media (min-width: 1000px) {
   .bg-image {

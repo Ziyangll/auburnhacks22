@@ -431,7 +431,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header-buttons > button {
+  .header-buttons > a {
     display: none;
     flex-direction: column;
   }
@@ -439,10 +439,10 @@ body {
     display: block;
   }
   .AH_logo {
-    width: 570px;
+    width: 80%;
   }
   .event_date {
-    top: 20px;
+    top: 15px;
     font-size: 20px;
     left: 20px;
     margin: 0px;
@@ -457,7 +457,8 @@ body {
   .container * p {
     font-size: 12px;
     width: 90vw;
-    margin-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .collapsed {
     width: 90vw;
@@ -476,11 +477,11 @@ body {
     font-size: 20px;
   }
   .flex-col {
-    width: 140px;
+    width: 100px;
   }
   .flex-col > img {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
   }
 
   h1 {

@@ -440,9 +440,9 @@ body {
     width: 570px;
   }
   .event_date {
-    top: 20px;
+    top: 60px;
     font-size: 20px;
-    left: 20px;
+    right: 20px;
     margin: 0px;
   }
   /* about section */

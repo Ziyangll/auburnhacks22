@@ -439,12 +439,13 @@ body {
     display: block;
   }
   .AH_logo {
-    width: 80%;
+    width: 800px;
+    height: 70%;
   }
   .event_date {
-    top: 15px;
+    top: 60px;
     font-size: 20px;
-    left: 20px;
+    right: 20px;
     margin: 0px;
   }
   /* about section */
@@ -492,6 +493,22 @@ body {
   }
   .social-menu > ul {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 670px) {
+  .AH_logo {
+    width: 700px;
+  }
+}
+@media (max-width: 600px) {
+  .AH_logo {
+    width: 600px;
+  }
+}
+@media (max-width: 550px) {
+  .AH_logo {
+    width: 500px;
   }
 }
 @media (min-width: 1000px) {

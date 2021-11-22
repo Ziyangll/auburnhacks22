@@ -181,6 +181,8 @@ body {
   position: absolute;
   margin-top: 300px;
   right: 70px;
+  text-align: right;
+  font-size: 15px;
 }
 .click_through {
   pointer-events: none;
@@ -428,7 +430,7 @@ body {
   }
   .event_date {
     top: 60px;
-    font-size: 20px;
+    font-size: 15px;
     right: 20px;
     margin: 0px;
   }

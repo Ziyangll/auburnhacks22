@@ -464,6 +464,7 @@ body {
 	justify-content: center;
 }
 .mobile .btn {
+	margin: 5px;
 	background-color: var(--secondary);
 	cursor: pointer;
 	display: inline-block;

@@ -513,6 +513,9 @@ body {
 	.desktop {
 		display: none;
 	}
+	#mlh-trust-badge {
+		display: none !important;
+	}
 	.mobile {
 		display: block;
 	}

@@ -9,6 +9,20 @@
 	--white: #ffffff;
 	--black: #000000;
 }
+.gradient-bg {
+  background-image: linear-gradient(
+  160deg,
+  hsl(14deg 88% 67%) 0%,
+  hsl(17deg 90% 66%) 22%,
+  hsl(21deg 92% 66%) 33%,
+  hsl(24deg 92% 65%) 42%,
+  hsl(27deg 92% 65%) 50%,
+  hsl(30deg 92% 64%) 58%,
+  hsl(33deg 91% 63%) 67%,
+  hsl(36deg 89% 63%) 78%,
+  hsl(39deg 87% 62%) 100%
+);
+}
 
 /* body css */
 html {
@@ -304,10 +318,29 @@ body {
 	align-items: center;
 	flex-direction: column;
 	margin: 20px;
-	margin-top: 200px;
+	margin-top: -40px;
 }
-.sponsors_container * a {
-	color: var(--air);
+
+.sponsors-logo-container > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sponsors-logo {
+	margin: 10px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: var(--water);
+}
+.lockheed > img {
+	width: 50vw;
+}
+.tsys > img {
+	width: 30vw;
+}
+.sponsors-row > img {
+	width: 9vw;
+	height: 150px;
 }
 
 /* Team section */

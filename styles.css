@@ -342,6 +342,9 @@ body {
 	width: 9vw;
 	height: 150px;
 }
+.sponsors-row-mobile > img {
+	width: 10vw;
+}
 
 /* Team section */
 

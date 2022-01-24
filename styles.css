@@ -345,6 +345,28 @@ body {
 .sponsors-row-mobile > img {
 	width: 10vw;
 }
+.sticker {
+	margin: 10px;
+	padding: 20px;
+	border-radius: 5px;
+	width: 9vw;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sticker-mobile {
+	margin: 10px;
+	padding: 20px;
+	border-radius: 5px;
+	width: 10vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sticker-img {
+	width: 100%
+}
 
 /* Team section */
 
